@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #aec9b1;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px;
+    background-color: #aec9b1;
+    padding: 40px 20px;
+    justify-content: space-between; 
+}
+
+.container-left {
+    flex: 1;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.left-content {
+    display: flex; 
+    gap: 20px; 
+    align-items: flex-start; 
+}
+.container-left h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: ' Narrow', Arial, sans-serif ;
+    font-weight: bold;
+    font-size: 60px;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 40%; 
+}
+
+.list li {
+    margin-bottom: 10px;
+    display: flex; 
+    align-items: center;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    font-size: 1rem; 
+    justify-content: space-between; 
+    width: 40%;
+
+}
+.list li a::after {
+    content: ' 🡥'; 
+    margin-left: 2px;
+}
+
+.video {
+    margin-top: 20px;
+}
+
+.video button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.video a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container-right {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    text-align: center; 
+    flex-direction: column; 
+    gap: 20px; 
+    padding-top: 20px;
+}
+.image-wrapper {
+    display: flex; 
+    flex-direction: row; 
+    gap: 0.5px;
+    align-items: flex-start;
+}
+
+.image-main {
+    width: 70%; 
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+.image-secondary {
+    width: 70%;
+    max-width: 350px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    position: relative;
+    top: 10px; 
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start;
+}
+.img {
+    width: 50%; 
+    max-width: 20px; 
+    height: auto; 
+    margin-top: 170px; 
+    margin-left: 40px;
+    background-color:#aec9b1 ;
+}
+.circle-image {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%; 
+    margin: 0 10px; 
+    vertical-align: middle; 
+}
+.view-all {
+    margin-top: 480px;
+    font-size: 1rem;
+    color: #333; 
+    cursor: pointer; 
+    display: block; 
+    text-align: center; 
+    margin-left: 10px; 
+}
+
+.tag, .tag2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 200px;
+}
+
+.tag2 {
+    margin-left: 10px; 
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left; 
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.products img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product1 img {
+    width: 25%;
+}
+
+.report {
+    background-color: #ebeae5;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 3rem;
+}
+
+.report strong {
+    font-size: 1.2rem;
+}
+
+.brand {
+    background-color: #fffffe;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1.1rem;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+@media (max-width: 768px) {
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+
+    .image-wrapper {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .image-main, .image-secondary {
+        width: 90%; 
+        max-width: 100%;
+    }
+
+    .tag2 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
